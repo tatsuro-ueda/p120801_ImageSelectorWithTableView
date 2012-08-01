@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property NSString *strImgName;
 @end

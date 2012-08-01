@@ -7,12 +7,26 @@
 //
 
 #import "TableViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
 @end
 
 @implementation TableViewController
+@synthesize arrayImg;
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.arrayImg = [NSArray arrayWithObjects:
+                         [UIImage imageNamed:@"image0.jpg"],
+                         [UIImage imageNamed:@"image1.jpg"],
+                         [UIImage imageNamed:@"image2.jpg"], nil];
+    }
+    return self;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -50,16 +64,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.arrayImg.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,6 +80,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    cell.textLabel.text = [NSString stringWithFormat:@"Image No.%d", indexPath.row];
+    cell.imageView.image = [arrayImg objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -122,6 +136,14 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    NSString *s = [NSString stringWithFormat:@"image%d.jpg", indexPath.row];
+    [self performSegueWithIdentifier:@"showImage" sender:s];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailViewController *d = segue.destinationViewController;
+    d.strImgName = sender;
 }
 
 @end

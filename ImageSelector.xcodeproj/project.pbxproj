@@ -14,7 +14,11 @@
 		0743A81A15C95E440002F910 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A81915C95E440002F910 /* main.m */; };
 		0743A81E15C95E440002F910 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A81D15C95E440002F910 /* AppDelegate.m */; };
 		0743A82115C95E440002F910 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0743A81F15C95E440002F910 /* MainStoryboard.storyboard */; };
-		0743A82415C95E440002F910 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A82315C95E440002F910 /* ViewController.m */; };
+		0743A83115C95F7B0002F910 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0743A82E15C95F7B0002F910 /* image0.jpg */; };
+		0743A83215C95F7B0002F910 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0743A82F15C95F7B0002F910 /* image1.jpg */; };
+		0743A83315C95F7B0002F910 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0743A83015C95F7B0002F910 /* image2.jpg */; };
+		0743A83715C960990002F910 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A83615C960990002F910 /* TableViewController.m */; };
+		0743A83A15C963490002F910 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A83915C963490002F910 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +26,20 @@
 		0743A80D15C95E440002F910 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0743A80F15C95E440002F910 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0743A81115C95E440002F910 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0743A81515C95E440002F910 /* ImageSelector-Info.plist */ = {isa = PBXFileReference; path = "ImageSelector-Info.plist"; sourceTree = "<group>"; };
+		0743A81515C95E440002F910 /* ImageSelector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageSelector-Info.plist"; sourceTree = "<group>"; };
 		0743A81715C95E440002F910 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0743A81915C95E440002F910 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0743A81B15C95E440002F910 /* ImageSelector-Prefix.pch */ = {isa = PBXFileReference; path = "ImageSelector-Prefix.pch"; sourceTree = "<group>"; };
-		0743A81C15C95E440002F910 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0743A81B15C95E440002F910 /* ImageSelector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageSelector-Prefix.pch"; sourceTree = "<group>"; };
+		0743A81C15C95E440002F910 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0743A81D15C95E440002F910 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0743A82015C95E440002F910 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0743A82215C95E440002F910 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		0743A82315C95E440002F910 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0743A82E15C95F7B0002F910 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		0743A82F15C95F7B0002F910 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		0743A83015C95F7B0002F910 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		0743A83515C960990002F910 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		0743A83615C960990002F910 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		0743A83815C963490002F910 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0743A83915C963490002F910 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +86,16 @@
 		0743A81315C95E440002F910 /* ImageSelector */ = {
 			isa = PBXGroup;
 			children = (
+				0743A82E15C95F7B0002F910 /* image0.jpg */,
+				0743A82F15C95F7B0002F910 /* image1.jpg */,
+				0743A83015C95F7B0002F910 /* image2.jpg */,
 				0743A81C15C95E440002F910 /* AppDelegate.h */,
 				0743A81D15C95E440002F910 /* AppDelegate.m */,
 				0743A81F15C95E440002F910 /* MainStoryboard.storyboard */,
-				0743A82215C95E440002F910 /* ViewController.h */,
-				0743A82315C95E440002F910 /* ViewController.m */,
+				0743A83515C960990002F910 /* TableViewController.h */,
+				0743A83615C960990002F910 /* TableViewController.m */,
+				0743A83815C963490002F910 /* DetailViewController.h */,
+				0743A83915C963490002F910 /* DetailViewController.m */,
 				0743A81415C95E440002F910 /* Supporting Files */,
 			);
 			path = ImageSelector;
@@ -150,6 +164,9 @@
 			files = (
 				0743A81815C95E440002F910 /* InfoPlist.strings in Resources */,
 				0743A82115C95E440002F910 /* MainStoryboard.storyboard in Resources */,
+				0743A83115C95F7B0002F910 /* image0.jpg in Resources */,
+				0743A83215C95F7B0002F910 /* image1.jpg in Resources */,
+				0743A83315C95F7B0002F910 /* image2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +179,8 @@
 			files = (
 				0743A81A15C95E440002F910 /* main.m in Sources */,
 				0743A81E15C95E440002F910 /* AppDelegate.m in Sources */,
-				0743A82415C95E440002F910 /* ViewController.m in Sources */,
+				0743A83715C960990002F910 /* TableViewController.m in Sources */,
+				0743A83A15C963490002F910 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +292,7 @@
 				0743A82915C95E440002F910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

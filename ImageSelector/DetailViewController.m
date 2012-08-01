@@ -13,6 +13,8 @@
 @end
 
 @implementation DetailViewController
+@synthesize imageView;
+@synthesize strImgName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +33,14 @@
 
 - (void)viewDidUnload
 {
+    [self setImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.imageView.image = [UIImage imageNamed:strImgName];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
